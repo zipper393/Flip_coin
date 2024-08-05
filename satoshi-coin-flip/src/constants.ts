@@ -1,0 +1,4 @@
+export const PACKAGE_ID =
+  "0x38030da0712393a48d305dd0e4c7b20116584793878e7dd9a80a48a966117bc1";
+export const HOUSECAP_ID =
+  "0x7bdc7da3af18344b31260f3554ed29fa82f218ff0ca334f2e3c9e808cbffee01";
