@@ -52,6 +52,14 @@ module satoshi_flip::single_player_satoshi {
     fee_bp: u16
   }
 
+    public fun start_game(guess: String, counter: &mut Counter, coin: Coin<SUI>, house_data: &mut HouseData, ctx: &mut TxContext): ID {
+        let fee_bp = house_data.base_fee_in_bp();
+        let (id, new_game) = internal_start_game(guess, counter, coin, house_data, fee_bp, ctx);
+
+        dof::add(house_data.borrow_mut(), id, new_game);
+        id
+    }
+    
     public fun finish_game(game_id: ID, bls_sig: vector<u8>, house_data: &mut HouseData, ctx: &mut TxContext) {
     // Ensure that the game exists.
     assert!(game_exists(house_data, game_id), EGameDoesNotExist);
