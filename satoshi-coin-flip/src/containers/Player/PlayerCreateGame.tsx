@@ -47,7 +47,7 @@ export function PlayerCreateGame() {
 
           // Create the game with CounterNFT
           txb.moveCall({
-            target: `${PACKAGE_ID}::single_player_satoshi::start_game`,
+            target: `${PACKAGE_ID}::single_player_flip::start_game`,
             arguments: [
               txb.pure.string(guess),
               txb.object(counterNFTData[0].data?.objectId!),
