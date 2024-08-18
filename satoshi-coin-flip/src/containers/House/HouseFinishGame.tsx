@@ -26,7 +26,7 @@ export function HouseFinishGame() {
     // Subscribe to NewGame event
     const unsub = suiClient.subscribeEvent({
       filter: {
-        MoveEventType: `${PACKAGE_ID}::single_player_satoshi::NewGame`,
+        MoveEventType: `${PACKAGE_ID}::single_player_flip::NewGame`,
       },
       onMessage(event) {
         console.log(event);
@@ -48,7 +48,7 @@ export function HouseFinishGame() {
           // Finish the game immediately after new game started
           const txb = new TransactionBlock();
           txb.moveCall({
-            target: `${PACKAGE_ID}::single_player_satoshi::finish_game`,
+            target: `${PACKAGE_ID}::single_player_flip::finish_game`,
             arguments: [
               txb.pure.address(game_id),
               txb.pure(bcs.vector(bcs.U8).serialize(houseSignedInput)),
