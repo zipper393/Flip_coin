@@ -26,10 +26,10 @@ export function PlayerListCounterNft() {
                   Object ID:
                 </Text>
                 <Text as="div">{it.data?.objectId}</Text>
-                <Text as="div" weight="bold">
+                {/* <Text as="div" weight="bold">
                   Object Type:
                 </Text>
-                <Text as="div">{it.data?.type}</Text>
+                <Text as="div">{it.data?.type}</Text> */}
               </Box>
             );
           })
@@ -38,7 +38,7 @@ export function PlayerListCounterNft() {
         )}
       </Box>
 
-      <Button
+      <Button variant="outline"
         disabled={isLoading}
         onClick={() => {
           refetch?.();
@@ -48,7 +48,7 @@ export function PlayerListCounterNft() {
       </Button>
 
       {!isLoading && data?.length === 0 && (
-        <Button
+        <Button variant="outline"
           ml={"3"}
           disabled={isLoading}
           onClick={() => {
