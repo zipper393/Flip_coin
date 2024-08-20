@@ -30,7 +30,7 @@ export function PlayerCreateGame() {
   return (
     <Container mb={"4"}>
       <Heading size="3" mb="2">
-        Create Game
+        Play Game
       </Heading>
 
       <form
@@ -83,7 +83,7 @@ export function PlayerCreateGame() {
         </Box>
 
         <Box mb="3">
-          <Text>Stake</Text>
+          <Text>PUT U BET</Text>
           <TextFieldInput
             required
             placeholder="Stake (in SUI)"
@@ -93,7 +93,7 @@ export function PlayerCreateGame() {
           />
         </Box>
 
-        <Button
+        <Button variant="outline"
           disabled={isLoading || counterNFTData.length <= 0}
           type="submit"
         >
