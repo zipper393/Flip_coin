@@ -1,9 +1,9 @@
 import { Box, Card, Heading } from "@radix-ui/themes";
 
-import { HouseInitialize } from "./HouseInitialize";
-import { HouseKeypairUtility } from "./HouseKeypairUtility";
-import { HouseKeypairInput } from "./HouseKeypairInput";
-import { HouseFinishGame } from "./HouseFinishGame";
+// import { HouseInitialize } from "./HouseInitialize";
+// import { HouseKeypairUtility } from "./HouseKeypairUtility";
+// import { HouseKeypairInput } from "./HouseKeypairInput";
+// import { HouseFinishGame } from "./HouseFinishGame";
 import { HouseDataInput } from "./HouseDataInput";
 
 export function HouseSesh() {
@@ -14,11 +14,11 @@ export function HouseSesh() {
           House
         </Heading>
 
-        <HouseKeypairUtility />
+        {/* <HouseKeypairUtility />
         <HouseKeypairInput />
-        <HouseInitialize />
+        <HouseInitialize /> */}
         <HouseDataInput />
-        <HouseFinishGame />
+        {/* <HouseFinishGame /> */}
       </Card>
     </Box>
   );
