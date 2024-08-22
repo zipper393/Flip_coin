@@ -19,22 +19,15 @@ function App() {
         }}
       >
         <Box>
-          <Heading>Satoshi Coin Flip Single Player</Heading>
+          <Heading>LUCKY FLIP</Heading>
         </Box>
 
         <Box>
           <ConnectButton />
         </Box>
       </Flex>
-      <Container>
-        <Heading size="4" m={"2"}>
-          Package ID: {PACKAGE_ID}
-        </Heading>
-        <Heading size="4" m={"2"}>
-          HouseCap ID: {HOUSECAP_ID}
-        </Heading>
-
-        <Callout.Root mb="2">
+      <Container>      
+       <Callout.Root mb="2">
           <Callout.Icon>
             <InfoCircledIcon />
           </Callout.Icon>
