@@ -2,7 +2,6 @@ import { ConnectButton, useCurrentAccount } from "@mysten/dapp-kit";
 import { Box, Callout, Container, Flex, Grid, Heading } from "@radix-ui/themes";
 import { PlayerSesh } from "./containers/Player/PlayerSesh";
 import { HouseSesh } from "./containers/House/HouseSesh";
-import { HOUSECAP_ID, PACKAGE_ID } from "./constants";
 import { InfoCircledIcon } from "@radix-ui/react-icons";
 
 function App() {
