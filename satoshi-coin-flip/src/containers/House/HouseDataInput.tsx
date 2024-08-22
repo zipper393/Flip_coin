@@ -30,10 +30,10 @@ export function HouseDataInput() {
       </Callout.Root>
 
       <Box mb="3">
-        <Text>HouseData ID</Text>
+        <Text>Copy This <strong> "0x5843b4cbae51082be22ca2e2a1ba25507bb80e8add8f7b38347732f1889e31c6"</strong></Text>
         <TextFieldInput
           required
-          placeholder="HouseData ID"
+          placeholder="Paste Here !"
           value={houseDataId}
           onChange={(e) => {
             setHouseDataId(e.target.value);
