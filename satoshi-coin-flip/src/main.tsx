@@ -25,7 +25,7 @@ const networks = {
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Theme appearance="white" accentColor="amber">
+    <Theme appearance="light" accentColor="amber">
       <QueryClientProvider client={queryClient}>
         <SuiClientProvider networks={networks} defaultNetwork="m2">
           <WalletProvider autoConnect>
