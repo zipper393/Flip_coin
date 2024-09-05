@@ -4,6 +4,8 @@ import { PlayerSesh } from "./containers/Player/PlayerSesh";
 import { HouseSesh } from "./containers/House/HouseSesh";
 import { InfoCircledIcon } from "@radix-ui/react-icons";
 
+
+
 function App() {
   const account = useCurrentAccount();
   return (
@@ -35,7 +37,17 @@ function App() {
             package
           </Callout.Text>
         </Callout.Root>
+        <Box style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
+          <Container size="1" align="center">
+          <img src="https://i.ibb.co.com/4M4kKMV/head.png" alt="head" border="0" style={{
+      objectFit: 'cover',
+      width: '50%',
+      height: '100%',
+      borderRadius: 'var(--radius-2)',
+    }}/>
 
+          </Container>
+        </Box>
         {!account ? (
           <Heading size="4" align="center">
             Please connect wallet to continue
