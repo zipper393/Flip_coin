@@ -38,7 +38,7 @@ function App() {
           </Callout.Text>
         </Callout.Root>
         <Box style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
-          <Container>
+          <Container align="center">
           <img src="https://i.ibb.co.com/4M4kKMV/head.png" alt="head" style={{
       objectFit: 'cover',
       width: '50%',
