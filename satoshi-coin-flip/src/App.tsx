@@ -1,4 +1,4 @@
- import { ConnectButton, useCurrentAccount } from "@mysten/dapp-kit";
+import { ConnectButton, useCurrentAccount } from "@mysten/dapp-kit";
 import { Box, Callout, Container, Flex, Grid, Heading } from "@radix-ui/themes";
 import { PlayerSesh } from "./containers/Player/PlayerSesh";
 import { HouseSesh } from "./containers/House/HouseSesh";
@@ -16,7 +16,8 @@ function App() {
         py="2"
         justify="between"
         style={{
-          borderBottom: "1px solid var(--gray-a2)",
+          borderBottom: "3px solid var(--gray-a5)",
+          background: 'var(--gray-a2)',
         }}
       >
         <Box>
@@ -28,7 +29,7 @@ function App() {
         </Box>
       </Flex>
       <Container>      
-       <Callout.Root mb="2">
+       <Callout.Root mb="2" style={{padding: '20px', margin: '5px',}}>
           <Callout.Icon>
             <InfoCircledIcon />
           </Callout.Icon>
@@ -38,25 +39,30 @@ function App() {
           </Callout.Text>
         </Callout.Root>
         <Box style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
-          <Container size="1" align="center">
+          <Container size="2" align="center">
           <img src="https://i.ibb.co.com/4M4kKMV/head.png" alt="head" border="0" style={{
       objectFit: 'cover',
       width: '50%',
       height: '50%',
       borderRadius: 'var(--radius-2)',
     }}/>
-
+        
           </Container>
+          <Heading size="9" align="center" style={{margin: '2px', paddingBottom: '40px', color: '#E0B20B',}}>
+            LUCKY FLIP
+          </Heading>
         </Box>
         {!account ? (
           <Heading size="4" align="center">
             Please connect wallet to continue
           </Heading>
         ) : (
+          <Container size="1" style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
           <Grid columns="2" gap={"3"} width={"auto"}>
             <PlayerSesh />
             <HouseSesh />
           </Grid>
+          </Container>
         )}
       </Container>
     </>

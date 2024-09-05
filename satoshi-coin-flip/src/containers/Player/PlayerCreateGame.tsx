@@ -66,7 +66,7 @@ export function PlayerCreateGame() {
               },
               onSuccess: (result: SuiTransactionBlockResponse) => {
                 toast.success(`Digest: ${result.digest}`);
-                toast.info(`Balance: ${result.balanceChanges?.map}`);
+                toast.info(`Balance: ${result.balancechanges}`);
               },
             },
           );
