@@ -1,4 +1,4 @@
-import { ConnectButton, useCurrentAccount } from "@mysten/dapp-kit";
+ import { ConnectButton, useCurrentAccount } from "@mysten/dapp-kit";
 import { Box, Callout, Container, Flex, Grid, Heading } from "@radix-ui/themes";
 import { PlayerSesh } from "./containers/Player/PlayerSesh";
 import { HouseSesh } from "./containers/House/HouseSesh";
@@ -39,7 +39,7 @@ function App() {
         </Callout.Root>
         <Box style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
           <Container size="1" align="center">
-          <img src="https://i.ibb.co.com/4M4kKMV/head.png" alt="head" border="0" style={{
+          <img src="https://i.ibb.co.com/4M4kKMV/head.png" alt="head" style={{
       objectFit: 'cover',
       width: '50%',
       height: '100%',
