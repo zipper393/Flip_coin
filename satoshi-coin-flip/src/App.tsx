@@ -38,7 +38,7 @@ function App() {
             package
           </Callout.Text>
         </Callout.Root>
-        <Box align="center" style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
+        <Box style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
           <Container>
            <Flex gap="3" align="center">
           <img src="https://i.ibb.co.com/4M4kKMV/head.png" alt="head" style={{
