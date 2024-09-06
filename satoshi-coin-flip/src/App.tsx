@@ -46,8 +46,6 @@ function App() {
       width: '50%',
       height: '100%',
       borderRadius: 'var(--radius-2)',
-      margin-left: 'auto',
-      margin-right: 'auto',
     }}/>
            </Flex>
           </Container>
