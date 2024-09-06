@@ -47,12 +47,12 @@ function App() {
       height: '100%',
       borderRadius: 'var(--radius-2)',
     }}/>
-           
+           </Flex>
+          </Container>
           <Heading size="9" align="center" style={{margin: '2px', paddingBottom: '40px', color: '#E0B20B',}}>
             LUCKY FLIP
           </Heading>
-          </Flex>
-          <Container/>
+          
         </Box>
         {!account ? (
           <Heading size="4" align="center">
