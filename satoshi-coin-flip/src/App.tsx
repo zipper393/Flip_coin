@@ -88,17 +88,17 @@ function App() {
           </div>
           <div>
           <label>
-            <Link src="https://discord.gg/SHT8yy5Zbt"> Discord</Link>
+            <Link href="https://discord.gg/SHT8yy5Zbt"> Discord</Link>
           </label>
           </div>
           <div>
           <label>
-          <Link src="https://t.me/luckflips"> Telegram</Link>
+          <Link href="https://t.me/luckflips"> Telegram</Link>
           </label>
           </div>
           <div>
           <label>
-          <Link src="https://x.com/flip_luck7"> Twitter</Link>
+          <Link href="https://x.com/flip_luck7"> Twitter</Link>
           </label>
           </div>
         </Box>
