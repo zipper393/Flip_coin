@@ -26,7 +26,7 @@ export function PlayerCreateGame() {
   const [guess, setGuess] = useState("");
   const [stake, setStake] = useState(0);
 
-  const handleGuessChange = (e) => {
+  const handleGuessChange = (e : any) => {
     setGuess(e.target.value);
   };
 
