@@ -98,7 +98,7 @@ export function PlayerCreateGame() {
             /> Heads
           </label>
           </div>
-          <div className="guess">
+          <div className="guess2">
           <label>
           <img src="https://i.ibb.co.com/7Ww8G4r/Luck-Flip-Coin-Tail.png" alt="tails" style={{
               width: 'auto',
