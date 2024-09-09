@@ -83,7 +83,7 @@ export function PlayerCreateGame() {
         </Box>
         <Box mb="3">
         <Grid columns={{ initial: '1', md: '2' }} gap="3" width="auto">
-          <div>
+          <div className="guess">
         <label>
         <img src="https://i.ibb.co.com/4M4kKMV/head.png" alt="head" style={{
               width: '68%',
@@ -98,7 +98,7 @@ export function PlayerCreateGame() {
             /> Heads
           </label>
           </div>
-          <div>
+          <div className="guess">
           <label>
           <img src="https://i.ibb.co.com/7Ww8G4r/Luck-Flip-Coin-Tail.png" alt="tails" style={{
               width: 'auto',
