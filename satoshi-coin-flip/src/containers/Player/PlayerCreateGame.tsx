@@ -25,6 +25,10 @@ export function PlayerCreateGame() {
   const [guess, setGuess] = useState("");
   const [stake, setStake] = useState(0);
 
+  const handleGuessChange = (e) => {
+    setGuess(e.target.value);
+  };
+
   const [houseDataId] = useContext(HouseDataContext);
 
   return (
@@ -74,15 +78,46 @@ export function PlayerCreateGame() {
       >
         <Box mb="3">
           <Text>Guess</Text>
-          <TextFieldInput
-            required
-            placeholder="Guess (H or T)"
-            onChange={(e) => {
-              setGuess(e.target.value);
-            }}
-          />
+          
+        </Box>
+        <Box mb="3">
+        <Grid columns={{ initial: '1', md: '2' }} gap="3" width="auto">
+          <div>
+        <label>
+        <img src="https://i.ibb.co.com/4M4kKMV/head.png" alt="head" style={{
+              width: '68%',
+              height: 'auto',
+              borderRadius: 'var(--radius-2)',
+          }}/>
+            <input
+              type="radio"
+              value="H"
+              checked={guess === "H"}
+              onChange={handleGuessChange}
+            /> Heads
+          </label>
+          </div>
+          <div>
+          <label>
+          <img src="https://i.ibb.co.com/7Ww8G4r/Luck-Flip-Coin-Tail.png" alt="tails" style={{
+              width: 'auto',
+              height: 'auto',
+              borderRadius: 'var(--radius-2)',
+          }}/>
+            <input
+              type="radio"
+              value="T"
+              checked={guess === "T"}
+              onChange={handleGuessChange}
+            /> Tails
+          </label>
+          </div>
+        </Grid>
         </Box>
 
+        
+
+        
         <Box mb="3">
           <Text>PUT U BET</Text>
           <TextFieldInput
