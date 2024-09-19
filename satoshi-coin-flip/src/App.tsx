@@ -1,5 +1,5 @@
 import { ConnectButton, useCurrentAccount } from "@mysten/dapp-kit";
-import { Avatar, Box, Container, Flex, Grid, Heading, Link } from "@radix-ui/themes";
+import { Text, Avatar, Box, Container, Flex, Grid, Heading, Link } from "@radix-ui/themes";
 import { PlayerSesh } from "./containers/Player/PlayerSesh";
 import { HouseSesh } from "./containers/House/HouseSesh";
 import ReactPlayer from 'react-player/youtube';
@@ -19,14 +19,21 @@ function App() {
           background: 'var(--gray-a2)',
         }}
       >
-        <Flex gap="2">
-          <Avatar
-            src="https://i.ibb.co.com/8gD1x1f/output-onlinegiftools.gif"
-            fallback="Luck Flip"
-          />
-          <Avatar fallback="Luck Flip" />
-        </Flex>
-        
+        <Box display="inline-block">
+            <Flex gap="1" align="center">
+              <Box>
+                <Text as="div" size="6" weight="bold" color="amber">
+                  LUCK FLIP
+                </Text>
+              </Box>
+              <Avatar
+                size="3"
+                src="https://i.ibb.co.com/8gD1x1f/output-onlinegiftools.gif"
+                radius="full"
+                fallback="T"
+              />
+            </Flex>
+        </Box>
 
         <Box>
           <ConnectButton />
@@ -40,7 +47,8 @@ function App() {
         <Heading mb="2" mt="2" size="7" color="amber">
           HOW TO PLAY
         </Heading>
-        <Flex gap="2" align="center">
+        <Container size="1" style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)'}}>
+        <Flex gap="1" align="center">
          <ReactPlayer 
             url='https://youtu.be/QjxPr8CU6OY?si=pmIdGxLqiRJIEpwb'
               muted={true}
@@ -48,6 +56,7 @@ function App() {
               width={'65%'}
               controls={true} />
         </Flex>
+        </Container>
               </>
         ) : (
           <Container size="1" style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
