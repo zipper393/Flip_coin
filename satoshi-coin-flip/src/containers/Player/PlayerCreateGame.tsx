@@ -86,7 +86,7 @@ export function PlayerCreateGame() {
           <div className="guess">
         <label>
         <img src="https://i.ibb.co.com/4M4kKMV/head.png" alt="head" style={{
-              width: '68%',
+              width: '50%',
               height: 'auto',
               borderRadius: 'var(--radius-2)',
           }}/>
@@ -101,7 +101,7 @@ export function PlayerCreateGame() {
           <div className="guess2">
           <label>
           <img src="https://i.ibb.co.com/7Ww8G4r/Luck-Flip-Coin-Tail.png" alt="tails" style={{
-              width: 'auto',
+              width: '50%',
               height: 'auto',
               borderRadius: 'var(--radius-2)',
           }}/>
