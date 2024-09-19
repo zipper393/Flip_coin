@@ -3,7 +3,6 @@ import { Avatar, Box, Container, Flex, Grid, Heading, Link } from "@radix-ui/the
 import { PlayerSesh } from "./containers/Player/PlayerSesh";
 import { HouseSesh } from "./containers/House/HouseSesh";
 import ReactPlayer from 'react-player/youtube';
-import AccordionDemo from './accord.tsx';
 
 
 function App() {
@@ -49,7 +48,6 @@ function App() {
               playing={true}
               width={'65%'}
               controls={true} />
-        <AccordionDemo />
         </Flex>
         </Container>
               </>
