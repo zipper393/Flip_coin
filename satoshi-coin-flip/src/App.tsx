@@ -2,7 +2,7 @@ import { ConnectButton, useCurrentAccount } from "@mysten/dapp-kit";
 import { Avatar, Box, Container, Flex, Grid, Heading, Link } from "@radix-ui/themes";
 import { PlayerSesh } from "./containers/Player/PlayerSesh";
 import { HouseSesh } from "./containers/House/HouseSesh";
-// import ReactPlayer from 'react-player/youtube';
+import ReactPlayer from 'react-player/youtube';
 
 
 function App() {
@@ -40,7 +40,6 @@ function App() {
         <Heading mb="2" mt="2" size="7" color="amber">
           HOW TO PLAY
         </Heading>
-{/*         <Container size="1" style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)'}}>
         <Flex gap="2" align="center">
          <ReactPlayer 
             url='https://youtu.be/QjxPr8CU6OY?si=pmIdGxLqiRJIEpwb'
@@ -49,7 +48,6 @@ function App() {
               width={'65%'}
               controls={true} />
         </Flex>
-        </Container> */}
               </>
         ) : (
           <Container size="1" style={{ background: 'var(--gray-a2)', borderRadius: 'var(--radius-3)' }}>
